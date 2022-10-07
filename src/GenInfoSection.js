@@ -10,6 +10,9 @@ function GeneralInfoSection() {
 
         <label for='email'>Email</label>
         <input type='email' id='email' required />
+
+        <label for='phone'>Phone Number</label>
+        <input type='tel' id='phone' required />
       </form>
     </>
   );
