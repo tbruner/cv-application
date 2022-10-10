@@ -5,8 +5,13 @@ function EducationSection() {
         <label for='school-name'>School Name</label>
         <input type='text' id='school-name' required />
 
-        <label for='location'>Location</label>
-        <input type='text' id='location' required />
+        <div>Location</div>
+        
+        <label for='school-city'>City</label>
+        <input type='text' id='school-city' required />
+
+        <label for='school-state'>State</label>
+        <input type='text' id='school-state' required />
 
         <label for='area-of-study'>Area of study</label>
         <input type='text' id='area-of-study' required />
