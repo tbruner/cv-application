@@ -25,6 +25,8 @@ function GeneralInfoSection() {
 
         <label for='zip-code'>Zip Code</label>
         <input type='number' id='zip-code' required />
+        
+        <button type='submit' class='submit'>Submit</button>
       </form>
     </>
   );

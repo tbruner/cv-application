@@ -21,6 +21,8 @@ function EducationSection() {
 
         <label for='date-to'>To</label>
         <input type='date' id='date-to' required />
+
+        <button type='submit' class='submit'>Submit</button>
       </form>
     </>
   );
