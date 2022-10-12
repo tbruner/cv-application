@@ -6,8 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1>CV Application</h1>
-      <GeneralInfoSection />
+      <Navigation />
       </header>
+      <Form />
+      <Display />
     </div>
   );
 }
