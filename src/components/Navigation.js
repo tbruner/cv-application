@@ -1,9 +1,13 @@
 function Navigation() {
   return (
     <>
-    <button>General Information</button>
-    <button>Education</button>
-    <button>Experience</button>
+    <nav>
+      <ul>
+        <li><button>General Information</button></li>
+        <li><button>Education</button></li>
+        <li><button>Experience</button></li>
+      </ul>
+    </nav>
     </>
   );
 }
