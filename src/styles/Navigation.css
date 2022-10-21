@@ -1,22 +1,20 @@
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: hsl(0, 0%, 25%);
-}
-
-nav li {
-  display: inline;
-  float: left;
-}
-
 nav button {
-  display: block;
-  padding: 12px;
-  color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 25%);
+  padding: 18px;
+  color: white;
+  border: none;
 }
 
 nav button:hover {
   background-color: hsl(0, 0%, 5%);
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 25%);
 }

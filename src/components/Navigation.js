@@ -4,11 +4,9 @@ function Navigation() {
   return (
     <>
     <nav>
-      <ul>
-        <li><button>General Information</button></li>
-        <li><button>Education</button></li>
-        <li><button>Experience</button></li>
-      </ul>
+        <button id='general-info-button'>General Information</button>
+        <button id='education-button'>Education</button>
+        <button id='experience-button'>Experience</button>
     </nav>
     </>
   );
