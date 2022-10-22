@@ -1,3 +1,5 @@
+import React from "react";
+
 class ExperienceSection extends React.Component {
   render() {
     return (
@@ -24,3 +26,5 @@ class ExperienceSection extends React.Component {
     );
   }
 }
+
+export default ExperienceSection;
