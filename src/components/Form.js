@@ -1,3 +1,4 @@
+import '../styles/Form.css';
 import GenInfoSection from './GenInfoSection.js';
 import EducationSection from './EducationSection.js';
 import ExperienceSection from './ExperienceSection.js';
