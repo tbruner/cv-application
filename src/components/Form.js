@@ -6,13 +6,13 @@ import ExperienceSection from './ExperienceSection.js';
 function Form(props) {
   let formSection;
   if(props.currentSection === 'general-info') {
-    formSection = <GenInfoSection />;
+    formSection = <GenInfoSection updateGeneralInfo={props.updateGeneralInfo} />;
   }
   else if(props.currentSection === 'education') {
-    formSection = <EducationSection />;
+    formSection = <EducationSection updateEducation={props.updateEducation} />;
   }
   else if(props.currentSection === 'experience') {
-    formSection = <ExperienceSection />;
+    formSection = <ExperienceSection updateExperience={props.updateExperience} />;
   }
   return (
     <div className='form-section'>

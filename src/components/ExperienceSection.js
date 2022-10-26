@@ -18,9 +18,9 @@ class ExperienceSection extends React.Component {
           <input type='date' id='job-date-to' required />
 
           <label htmlFor='job-duties'>Job Duties</label>
-          <input type='text' id='job-duties' required />
+          <textarea id='job-duties' required />
 
-          <button type='submit' className='submit'>Submit</button>
+          <button className='submit' onClick={this.props.updateExperience}>Update</button>
         </form>
       </>
     );

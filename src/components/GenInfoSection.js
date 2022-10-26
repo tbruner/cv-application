@@ -1,4 +1,4 @@
-function GeneralInfoSection() {
+function GeneralInfoSection(props) {
   return (
     <>
       <form>
@@ -14,9 +14,6 @@ function GeneralInfoSection() {
         <label htmlFor='phone'>Phone Number</label>
         <input type='tel' id='phone' required />
 
-        <label htmlFor='address'>Address</label>
-        <input type='text' id='address' required />
-
         <label htmlFor='city'>City</label>
         <input type='text' id='city' required />
 
@@ -24,9 +21,9 @@ function GeneralInfoSection() {
         <input type='text' id='state' required />
 
         <label htmlFor='zip-code'>Zip Code</label>
-        <input type='number' id='zip-code' required />
+        <input type='number' id='zip' required />
         
-        <button type='submit' className='submit'>Submit</button>
+        <button className='submit' onClick={props.updateGeneralInfo}>Update</button>
       </form>
     </>
   );
