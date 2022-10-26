@@ -1,7 +1,7 @@
 function EducationSection(props) {
   return (
     <>
-      <form>
+      <div className="form">
         <label htmlFor='school-name'>School Name</label>
         <input type='text' id='school-name' required />
 
@@ -33,7 +33,7 @@ function EducationSection(props) {
         <input type='date' id='date-to' required />
 
         <button className='submit' onClick={props.updateEducation}>Update</button>
-      </form>
+      </div>
     </>
   );
 }

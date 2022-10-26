@@ -4,7 +4,7 @@ class ExperienceSection extends React.Component {
   render() {
     return (
       <>
-        <form>
+        <div className="form">
           <label htmlFor='employer'>Employer Name</label>
           <input type='text' id='employer' required />
 
@@ -21,7 +21,7 @@ class ExperienceSection extends React.Component {
           <textarea id='job-duties' required />
 
           <button className='submit' onClick={this.props.updateExperience}>Update</button>
-        </form>
+        </div>
       </>
     );
   }

@@ -1,7 +1,7 @@
 function GeneralInfoSection(props) {
   return (
     <>
-      <form>
+      <div className="form">
         <label htmlFor='first-name'>First Name</label>
         <input type='text' id='first-name' required />
 
@@ -24,7 +24,7 @@ function GeneralInfoSection(props) {
         <input type='number' id='zip' required />
         
         <button className='submit' onClick={props.updateGeneralInfo}>Update</button>
-      </form>
+      </div>
     </>
   );
 }
