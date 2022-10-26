@@ -4,15 +4,21 @@ import EducationSection from './EducationSection.js';
 import ExperienceSection from './ExperienceSection.js';
 
 function Form(props) {
+  let formSection;
   if(props.currentSection === 'general-info') {
-    return <GenInfoSection />
+    formSection = <GenInfoSection />;
   }
   else if(props.currentSection === 'education') {
-    return <EducationSection />
+    formSection = <EducationSection />;
   }
   else if(props.currentSection === 'experience') {
-    return <ExperienceSection />
+    formSection = <ExperienceSection />;
   }
+  return (
+    <div className='form-section'>
+      {formSection}
+    </div>
+  )
 }
 
 export default Form;

@@ -2,37 +2,37 @@ function EducationSection() {
   return (
     <>
       <form>
-        <label for='school-name'>School Name</label>
+        <label htmlFor='school-name'>School Name</label>
         <input type='text' id='school-name' required />
 
-        <div class='blank-grid-item'></div>
-        <div class='blank-grid-item'></div>
+        <div className='blank-grid-item'></div>
+        <div className='blank-grid-item'></div>
 
         <div>Location:</div>
 
-        <div class='blank-grid-item'></div>
-        <div class='blank-grid-item'></div>
-        <div class='blank-grid-item'></div>
+        <div className='blank-grid-item'></div>
+        <div className='blank-grid-item'></div>
+        <div className='blank-grid-item'></div>
 
-        <label for='school-city'>City</label>
+        <label htmlFor='school-city'>City</label>
         <input type='text' id='school-city' required />
 
-        <label for='school-state'>State</label>
+        <label htmlFor='school-state'>State</label>
         <input type='text' id='school-state' required />
 
-        <label for='area-of-study'>Area of study</label>
+        <label htmlFor='area-of-study'>Area of study</label>
         <input type='text' id='area-of-study' required />
 
-        <div class='blank-grid-item'></div>
-        <div class='blank-grid-item'></div>
+        <div className='blank-grid-item'></div>
+        <div className='blank-grid-item'></div>
 
-        <label for='date-from'>From</label>
+        <label htmlFor='date-from'>From</label>
         <input type='date' id='date-from' required />
 
-        <label for='date-to'>To</label>
+        <label htmlFor='date-to'>To</label>
         <input type='date' id='date-to' required />
 
-        <button type='submit' class='submit'>Submit</button>
+        <button type='submit' className='submit'>Submit</button>
       </form>
     </>
   );
