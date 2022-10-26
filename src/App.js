@@ -16,8 +16,21 @@ function App() {
     state: 'Ichigan',
     zip: '12345'
   });
-  const [education, setEducation] = useState();
-  const [experience, setExperience] = useState();
+  const [education, setEducation] = useState({
+    schoolName: '',
+    city: '',
+    state: '',
+    major: '',
+    from: '',
+    to: ''
+  });
+  const [experience, setExperience] = useState({
+    employer: '',
+    jobTitle: '',
+    from: '',
+    to: '',
+    jobDuties: ''
+  });
 
   function sectionSelect(e) {
     if(e.target.value === 'general-info') {
@@ -44,11 +57,24 @@ function App() {
   }
 
   function updateEducation() {
-
+    setEducation({
+      schoolName: document.getElementById('school-name').value,
+      city: document.getElementById('school-city').value,
+      state: document.getElementById('school-state').value,
+      major: document.getElementById('area-of-study').value,
+      from: document.getElementById('date-from').value,
+      to: document.getElementById('date-to').value
+    });
   }
 
   function updateExperience() {
-
+    setExperience({
+      employer: document.getElementById('employer').value,
+      jobTitle: document.getElementById('job-title').value,
+      from: document.getElementById('job-date-from').value,
+      to: document.getElementById('job-date-to').value,
+      jobDuties: document.getElementById('job-duties').value
+    });
   }
 
   return (
@@ -62,7 +88,7 @@ function App() {
       </nav>
       </header>
       <Form currentSection={currentSection} updateGeneralInfo={updateGeneralInfo} updateEducation={updateEducation} updateExperience={updateExperience} />
-      <Display generalInfo={generalInfo} />
+      <Display generalInfo={generalInfo} education={education} experience={experience} />
     </div>
   );
 }
