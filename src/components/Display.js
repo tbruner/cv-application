@@ -10,18 +10,28 @@ function Display(props) {
 
     {props.education[0] && <div className="education">
       <h2>EDUCATION</h2>
-      <h3>{props.education.schoolName}</h3>
-      <p>{props.education.city}, {props.education.state}</p>
-      <p>Major: {props.education.major}</p>
-      <p>{props.education.from} - {props.education.to}</p>
+      
+      {props.education.map((school, index) => (
+        <div key={index}>
+          <h3>{school.schoolName}</h3>
+          <p>{school.city}, {school.state}</p>
+          <p>Major: {school.major}</p>
+          <p>{school.from} - {school.to}</p>
+        </div>
+      ))}
     </div>}
 
     {props.experience[0] && <div className="experience">
       <h2>EXPERIENCE</h2>
-      <h3>{props.experience.jobTitle}</h3>
-      <p>{props.experience.employer}</p>
-      <p>{props.experience.from} - {props.experience.to}</p>
-      <p>{props.experience.jobDuties}</p>
+
+      {props.experience.map((job, index) => (
+        <div key={index}>
+          <h3>{job.jobTitle}</h3>
+          <p>{job.employer}</p>
+          <p>{job.from} - {job.to}</p>
+          <p>{job.jobDuties}</p>
+        </div>
+      ))}
     </div>}
     </>
   );

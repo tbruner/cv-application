@@ -35,7 +35,7 @@ function App() {
   }
 
   function updateEducation() {
-    setEducation([{
+    setEducation([...education, {
       schoolName: document.getElementById('school-name').value,
       city: document.getElementById('school-city').value,
       state: document.getElementById('school-state').value,
@@ -45,14 +45,22 @@ function App() {
     }]);
   }
 
+  function clearEducation() {
+    setEducation([]);
+  }
+
   function updateExperience() {
-    setExperience({
+    setExperience([...experience, {
       employer: document.getElementById('employer').value,
       jobTitle: document.getElementById('job-title').value,
       from: document.getElementById('job-date-from').value,
       to: document.getElementById('job-date-to').value,
       jobDuties: document.getElementById('job-duties').value
-    });
+    }]);
+  }
+
+  function clearExperience() {
+    setExperience([]);
   }
 
   return (
@@ -66,7 +74,14 @@ function App() {
       </nav>
       </header>
       <div className='content'>
-        <Form currentSection={currentSection} updateGeneralInfo={updateGeneralInfo} updateEducation={updateEducation} updateExperience={updateExperience} />
+        <Form 
+          currentSection={currentSection}
+          updateGeneralInfo={updateGeneralInfo}
+          updateEducation={updateEducation}
+          updateExperience={updateExperience}
+          clearEducation={clearEducation}
+          clearExperience={clearExperience}
+        />
         <Display generalInfo={generalInfo} education={education} experience={experience} />
       </div>
     </div>

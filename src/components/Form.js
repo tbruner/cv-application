@@ -9,10 +9,10 @@ function Form(props) {
     formSection = <GenInfoSection updateGeneralInfo={props.updateGeneralInfo} />;
   }
   else if(props.currentSection === 'education') {
-    formSection = <EducationSection updateEducation={props.updateEducation} />;
+    formSection = <EducationSection updateEducation={props.updateEducation} clearEducation={props.clearEducation} />;
   }
   else if(props.currentSection === 'experience') {
-    formSection = <ExperienceSection updateExperience={props.updateExperience} />;
+    formSection = <ExperienceSection updateExperience={props.updateExperience} clearExperience={props.clearExperience} />;
   }
   return (
     <div className='form-section'>
