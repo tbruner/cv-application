@@ -1,4 +1,5 @@
 function EducationSection(props) {
+  const {updateEducation, clearEducation} = props;
   return (
     <>
       <div className="form">
@@ -33,8 +34,8 @@ function EducationSection(props) {
         <input type='date' id='date-to' required />
 
         <div className="buttons">
-          <button className='add' onClick={props.updateEducation}>Add</button>
-          <button className='clear' onClick={props.clearEducation}>Clear</button>
+          <button className='add' onClick={updateEducation}>Add</button>
+          <button className='clear' onClick={clearEducation}>Clear</button>
         </div>
       </div>
     </>

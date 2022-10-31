@@ -1,4 +1,4 @@
-function GeneralInfoSection(props) {
+function GeneralInfoSection({ updateGeneralInfo }) {
   return (
     <>
       <div className="form">
@@ -24,7 +24,7 @@ function GeneralInfoSection(props) {
         <input type='number' id='zip' required />
         
         <div className="buttons">
-          <button className='update' onClick={props.updateGeneralInfo}>Update</button>
+          <button className='update' onClick={updateGeneralInfo}>Update</button>
         </div>
       </div>
     </>

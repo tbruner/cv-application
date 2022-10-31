@@ -2,6 +2,7 @@ import React from "react";
 
 class ExperienceSection extends React.Component {
   render() {
+    const { updateExperience, clearExperience } = this.props;
     return (
       <>
         <div className="form">
@@ -21,8 +22,8 @@ class ExperienceSection extends React.Component {
           <textarea id='job-duties' required />
 
           <div className="buttons">
-            <button className='add' onClick={this.props.updateExperience}>Add</button>
-            <button className="clear" onClick={this.props.clearExperience}>Clear</button>
+            <button className='add' onClick={updateExperience}>Add</button>
+            <button className="clear" onClick={clearExperience}>Clear</button>
           </div>
         </div>
       </>
