@@ -20,7 +20,10 @@ class ExperienceSection extends React.Component {
           <label htmlFor='job-duties'>Job Duties</label>
           <textarea id='job-duties' required />
 
-          <button className='submit' onClick={this.props.updateExperience}>Update</button>
+          <div className="buttons">
+            <button className='add' onClick={this.props.updateExperience}>Add</button>
+            <button className="clear" onClick={this.props.clearExperience}>Clear</button>
+          </div>
         </div>
       </>
     );

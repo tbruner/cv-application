@@ -23,7 +23,9 @@ function GeneralInfoSection(props) {
         <label htmlFor='zip-code'>Zip Code</label>
         <input type='number' id='zip' required />
         
-        <button className='submit' onClick={props.updateGeneralInfo}>Update</button>
+        <div className="buttons">
+          <button className='update' onClick={props.updateGeneralInfo}>Update</button>
+        </div>
       </div>
     </>
   );

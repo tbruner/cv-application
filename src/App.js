@@ -65,8 +65,10 @@ function App() {
         <button value='experience' onClick={sectionSelect}>Experience</button>
       </nav>
       </header>
-      <Form currentSection={currentSection} updateGeneralInfo={updateGeneralInfo} updateEducation={updateEducation} updateExperience={updateExperience} />
-      <Display generalInfo={generalInfo} education={education} experience={experience} />
+      <div className='content'>
+        <Form currentSection={currentSection} updateGeneralInfo={updateGeneralInfo} updateEducation={updateEducation} updateExperience={updateExperience} />
+        <Display generalInfo={generalInfo} education={education} experience={experience} />
+      </div>
     </div>
   );
 }

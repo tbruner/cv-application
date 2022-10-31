@@ -32,7 +32,10 @@ function EducationSection(props) {
         <label htmlFor='date-to'>To</label>
         <input type='date' id='date-to' required />
 
-        <button className='submit' onClick={props.updateEducation}>Update</button>
+        <div className="buttons">
+          <button className='add' onClick={props.updateEducation}>Add</button>
+          <button className='clear' onClick={props.clearEducation}>Clear</button>
+        </div>
       </div>
     </>
   );
