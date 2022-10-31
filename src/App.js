@@ -6,31 +6,9 @@ import Display from './components/Display.js'
 
 function App() {
   const [currentSection, setCurrentSection] = useState('general-info');
-  const [generalInfo, setGeneralInfo] = useState({
-    firstName: 'Jane',
-    lastName: 'Doe',
-    email: 'jane@aol.org',
-    phone: '123-456-7890',
-    address: '000 Mocking Bird Lane',
-    city: 'Zoo',
-    state: 'Ichigan',
-    zip: '12345'
-  });
-  const [education, setEducation] = useState({
-    schoolName: '',
-    city: '',
-    state: '',
-    major: '',
-    from: '',
-    to: ''
-  });
-  const [experience, setExperience] = useState({
-    employer: '',
-    jobTitle: '',
-    from: '',
-    to: '',
-    jobDuties: ''
-  });
+  const [generalInfo, setGeneralInfo] = useState({});
+  const [education, setEducation] = useState([]);
+  const [experience, setExperience] = useState([]);
 
   function sectionSelect(e) {
     if(e.target.value === 'general-info') {
@@ -57,14 +35,14 @@ function App() {
   }
 
   function updateEducation() {
-    setEducation({
+    setEducation([{
       schoolName: document.getElementById('school-name').value,
       city: document.getElementById('school-city').value,
       state: document.getElementById('school-state').value,
       major: document.getElementById('area-of-study').value,
       from: document.getElementById('date-from').value,
       to: document.getElementById('date-to').value
-    });
+    }]);
   }
 
   function updateExperience() {
