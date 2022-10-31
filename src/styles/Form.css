@@ -30,3 +30,8 @@
   height: 500px;
   border-bottom: 12px solid hsl(0, 0%, 25%);
 }
+
+#job-duties {
+  width: 375px;
+  height: 145px;
+}
